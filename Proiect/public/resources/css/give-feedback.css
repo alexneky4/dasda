@@ -1,0 +1,262 @@
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-section {
+    display: flex;
+    flex-direction: column;
+    width: 60rem;
+    /*box-shadow: 0 0 35px -2px rgba(0, 0, 0, .2);*/
+    padding: 2rem 2rem;
+    /*background-color: #07223b;*/
+}
+
+form section{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    background-color: #07223b;
+    padding: 2rem 3rem;
+    box-shadow: 0 0 35px -2px rgba(0, 0, 0, .2);
+    border-radius: 0.8rem;
+}
+
+#red-text{
+    font-weight:800;
+    color: red;
+}
+
+h1 {
+    margin: 0;
+    text-align: center;
+}
+
+h2 {
+    margin: 0;
+    font-size: 1.6rem;
+}
+
+ul{
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+}
+
+li input{
+
+    border: 1px solid #ccc;
+    width: calc(100% - 6.5rem);
+    height: 3.5rem;
+}
+
+li button{
+
+    border: 1px solid #ccc;
+    width: 6rem;
+    height: 3.5rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+form div {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+form div input,
+form div select,
+form div textarea {
+    padding: 0.8rem 1.2rem;
+    border: 1px solid #ccc;
+}
+
+form div input:focus,
+form div select:focus,
+form div textarea:focus{
+    outline: none;
+}
+
+form button {
+    border: 1px solid #000;
+    background: #07223b;
+    color: #fff;
+    padding: 1rem 2rem;
+    box-shadow: 0 0 35px -2px rgba(0, 0, 0, .2);
+    border-radius: 0.8rem;
+}
+
+form button:hover {
+    background: #03203b;
+    color: #fff;
+    cursor: pointer;
+}
+
+li{
+    list-style: none;
+}
+
+.no-form-message-group {
+    position: absolute;
+    top: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.no-form-message-group h2 {
+    color: white;
+    font-size: 2.5rem;
+}
+
+.no-form-message-group a {
+    font-size: 2rem;
+    color: gray;
+}
+
+.no-form-message-group a:hover {
+    opacity: 0.8;
+}
+
+.description-group {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.images-group h2 {
+    margin: 0;
+    font-size: 1.6rem;
+}
+
+.carousel {
+    display: flex;
+    position: relative;
+}
+
+.carousel-item {
+    display: none;
+    width: 100%;
+}
+
+.carousel-item img {
+    width: 100%;
+}
+
+.carousel-item.active {
+    display: block;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 0.5rem;
+    margin: 0;
+    color: #fff;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.5);
+    border: 0;
+    cursor: pointer;
+}
+
+.carousel-control-prev {
+    left: 0;
+}
+
+.carousel-control-next {
+    right: 0;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background: no-repeat 50%/100% 100%;
+}
+
+.carousel-control-prev-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+}
+
+.carousel-control-next-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
+}
+
+.carousel a {
+    display: flex;
+    justify-content: center;
+
+}
+
+.container-dropdown {
+    position: relative;
+    width: 100%;
+}
+
+.dropdown {
+    display: none;
+    position: absolute;
+    width: 100%;
+    z-index: 100;
+    border: 1px solid #ccc;
+    max-height: 200px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    background: white;
+    color: black;
+    padding: 0;
+}
+
+.emotion-list-items {
+    list-style: none;
+    padding: 0.5rem;
+    margin: 0;
+}
+
+.container-dropdown li:hover {
+    background: #f2f2f2;
+    cursor: pointer;
+}
+
+.container-dropdown li {
+    list-style-type: none;
+    padding: 0 0 0.5rem 0;
+    font-weight: bold;
+}
+
+.error-message {
+    color: #cf0007;
+    margin: 0;
+}
+
+.success-message-group {
+    position: absolute;
+    top: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.success-message {
+    color: #0f9d58;
+    margin: 0;
+    font-size: 2rem;
+}
+
+.success-message-group a {
+    font-size: 2rem;
+    color: gray;
+}
+
+.success-message-group a:hover {
+    opacity: 0.8;
+}

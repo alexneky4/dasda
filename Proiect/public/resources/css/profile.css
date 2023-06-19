@@ -1,0 +1,234 @@
+.main-template{
+    display: grid;
+    grid-row : 2;
+    grid-template-columns: 20% auto;
+}
+
+aside {
+    grid-column : 1;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+.profile-info{
+    background-color: #093e70;
+}
+.profile-details {
+    grid-column: 2;
+}
+
+.profile-picture {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-bottom: 2rem;
+    padding: 0;
+}
+.profile-picture img{
+    width: 80%;
+    height: auto;
+    display: inline-block;
+}
+
+.user-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    box-shadow: 0 0 35px -2px rgba(0, 0, 0, .2);
+}
+
+.user-info p {
+    width: 100%;
+    font-size: 1em;
+    text-align: left;
+    padding-left: 1rem;
+}
+
+#edit-button {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 3rem;
+}
+
+#edit-button:hover {
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.edit-button-group {
+    display: flex;
+    align-items: center;
+}
+
+#edit-button button {
+    width: 40%;
+    height: 100%;
+}
+img
+{
+    object-fit: contain;
+}
+
+.profile-details{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.profile-picture img{
+    padding-top: 2rem;
+}
+
+#completed-forms-list, #created-forms-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 80%;
+    margin-top: 3em;
+    margin-bottom: 3em;
+}
+
+.complete-form-info, .created-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 100%;
+    border: 10px solid white;
+    border-radius: 10px;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    padding: 0.5rem;
+    background-color: #093e70;
+    box-shadow: 0 0 35px -2px rgba(0, 0, 0, .2);
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.form-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.created-form > .form-info {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+.text-wrapper{
+    max-height: 11rem;
+    overflow: hidden;
+    line-height: 2rem;
+}
+
+.complete-form-info h1{
+    font-size: larger;
+    font-weight: 300;
+    display: inline-block;
+}
+
+
+.progress-bar {
+    display: inline-block;
+    width: 90%;
+    margin-top: 0.5em;
+    background-color: #555;
+    margin-left: 2em;
+    margin-bottom: 1em;
+  }
+.progress {
+    display: inline-block;
+    height: 0.5em;
+    background-color: green;
+}
+.progress-percent {
+    font-size: small;
+    margin-left: 0.5em;
+    display: inline;
+}
+
+.percentage-progress {
+    display: none;
+}
+
+.expanded {
+    max-height: none;
+    height: auto;
+    overflow: visible;
+    transition: max-height 0.5s ease-in-out;
+    -webkit-transition: max-height 0.5s ease-in-out;
+    -moz-transition: max-height 0.5s ease-in-out;
+    -ms-transition: max-height 0.5s ease-in-out;
+    -o-transition: max-height 0.5s ease-in-out;
+}
+
+.show-more-button {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    color: #333;
+    cursor: pointer;
+    width: 20%;
+    height: 100%;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.load-button {
+    width: 30%;
+    margin-top: 3rem;
+}
+
+@media(max-width: 860px)
+{
+    .main-template{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .profile-details{
+        width: 100%;
+    }
+    .progress-bar-container{
+        display: none;
+    }
+    .form-info{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: flex-start;
+    }
+
+    .percentage-progress{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .value-percent {
+        font-size: 2rem;
+    }
+}

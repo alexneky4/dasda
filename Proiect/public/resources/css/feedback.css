@@ -1,0 +1,122 @@
+.main{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+
+
+.description {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    background-color: #093e70;
+    width: 80%;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    padding-left: 3rem;
+    height: 25rem;
+}
+
+.question-answers {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 80%;
+}
+
+.text-answers {
+    width: 100%;
+    background-color: #093e70;;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    padding-left: 3rem;
+    height: 30rem;
+}
+
+.answers {
+    width: 95%;
+    overflow: auto;
+    height: 22.5rem;
+    background-color: #07223b;
+}
+
+.answers p{
+    margin-top: 0.5rem;
+    margin-left: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.pie-chart{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #093e70;;;
+    height: 60rem;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+#chart {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.pie-layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.emotions-color {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.emotions-color p{
+    font-size: 10px;
+}
+
+.line-chart{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: #093e70;;
+    width: 100%;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+.emotion-line p{
+    margin-left: 2rem;
+}
+.emotion-line{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: start;
+}
+
+.emotions-line-percentage{
+    list-style: none;
+}
+.emotions-line-percentage li{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+.line-bar{
+    width: 50%;
+    background-color: purple;
+}
+
+@media (max-width : 800px)  {
+    .pie-layout{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}

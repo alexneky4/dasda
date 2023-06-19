@@ -1,0 +1,118 @@
+
+section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 2rem 20rem 0 20rem;
+}
+
+.users-group,
+.tags-group {
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 0 1rem -0.2rem rgba(0, 0, 0, .2);
+    padding: 2rem;
+    height: calc(100vh - 16rem);
+    gap: 1rem;
+}
+
+.tags-group {
+    width: 30rem;
+    min-width: 25rem;
+}
+
+div h2 {
+    padding: 1rem;
+    font-size: 2rem;
+    text-align: center;
+}
+
+input {
+    padding: 0.8rem 1.2rem;
+    border: 1px solid #ccc;
+    height: 2.5rem;
+}
+
+input:focus {
+    outline: none;
+}
+
+.tags-group-buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#add-tag {
+    height: 2.6rem;
+    width: 5rem;
+    align-items: center;
+    padding: 0.5rem;
+}
+
+#search-tags {
+    width: 80%;
+}
+
+button {
+    border: 1px solid #000;
+    padding: 1rem 1rem;
+}
+
+button:hover {
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.table-container {
+    overflow: auto;
+    min-width: 40rem;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+th {
+    padding: 1rem;
+}
+
+.column-names {
+    border: 0.1rem solid white;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    background: #07223B;
+}
+
+table, td {
+    border: 0.1rem solid white;
+}
+
+td {
+    max-width: 30rem;
+    overflow: auto;
+    padding: 0.5rem;
+}
+
+.tags-list {
+    overflow: auto;
+    max-width: 30rem;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.tag-element {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    border: 0.1rem solid white;
+}
+
+.tag-element span {
+    overflow: auto;
+}

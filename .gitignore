@@ -1,0 +1,6 @@
+*
+!.gitignore
+!Proiect/
+!Proiect/**/*
+!ProiectAPI/
+!ProiectAPI/**/*

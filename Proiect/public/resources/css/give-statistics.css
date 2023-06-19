@@ -1,0 +1,286 @@
+#containers-column{
+    grid-column: 1;
+}
+#container-div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.container-one, .container-two, .container-three {
+    width: 80%;
+    height: 30%;
+    margin: 5rem 5rem 0rem 5rem;
+}
+
+.select-btn {
+    display: flex;
+    height: 3rem;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1rem;
+    border-radius: 0;
+    cursor: pointer;
+    background-color: #10085d;
+}
+.select-btn .btn-text {
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: #fff;
+}
+.select-btn .arrow-dwn {
+    display: flex;
+    height: 2.2rem;
+    width: 2.2rem;
+    border-radius: 50%;
+    color: #fff;
+    font-size :1.3rem;
+    background: linear-gradient(-90deg,#02203c,#001528);
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s;
+}
+.select-btn.open .arrow-dwn {
+    transform: rotate(-180deg);
+}
+.list-items {
+    position: relative;
+    /* to be exactly like you want you can try with 0 */
+    margin-top: 0;
+    border-radius: 0;
+    /* border-color: #000; */
+    padding: 0.5rem;
+    background-color: #10085d;
+    display: none;
+}
+.select-btn.open ~ .list-items {
+    display: block;
+    border-color: #8c1b09;
+}
+.list-items .item {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    height: 3rem;
+    cursor: pointer;
+    transition: 0.3s;
+    padding: 1rem;
+    border-radius: 1rem;
+    border-color: #8c1b09;
+}
+.list-items .item:hover {
+    background-color: #000208;
+}
+.container-one label, .container-two label, .container-three label {
+    cursor: pointer;
+    width: 90%;
+}
+
+.item .item-text {
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: #fff;
+}
+.item .checkbox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 2.2rem;
+    width: 2.2rem;
+    border-radius: 1rem;
+    margin-right: 1.3rem;
+    border: 1rem solid #c0c0c0;
+    transition: all 0.3s ease-in-out;
+}
+.item.checked .checkbox {
+    background-color: #4070f4;
+    border-color: #4070f4;
+}
+.checkbox .check-icon {
+    color: #fff;
+    font-size: 1rem;
+    transform: scale(0);
+    transition: all 0.3s ease-in-out;
+}
+.item.checked .check-icon {
+    transform: scale(1);
+}
+#verify {
+    margin-top: 3rem;
+}
+.pie_chart {
+    grid-column: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+main {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+
+}
+.component-result{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.error-message {
+    color: red;
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+#format-buttons {
+    padding: 3rem 2rem;
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+
+#jsonButton {
+    margin-right: 2rem;
+}
+
+#csvButton {
+    margin-left : 2rem;
+}
+
+
+.table-container {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    overflow: auto;
+    min-width: 40rem;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+th {
+    padding: 1rem;
+}
+
+.column-names {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    background: #07223B;
+}
+
+table, td {
+    border: 0.1rem solid white;
+}
+
+td {
+    max-width: 30rem;
+    overflow: auto;
+    padding: 0.5rem;
+}
+/*canvas {*/
+/*    height: 80%;*/
+/*}*/
+@media (max-width: 500px) {
+    main {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    #containers-column {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 2rem;
+    }
+  
+    #container-div {
+      width: 80%;
+      margin: 2rem auto;
+      text-align: center;
+    }
+  
+    .container-one,
+    .container-two,
+    .container-three {
+      width: 75vw;
+      height: 40%;
+      margin: 2rem 2rem 2rem 2rem;
+      align-items: center;
+    }
+  
+    .select-btn .btn-text {
+      font-size: 1.8rem;
+    }
+  
+    .list-items {
+      width: 100%;
+      margin-top: 0;
+      border-radius: 0;
+      padding: 0.5rem;
+      background-color: #10085d;
+      display: none;
+      text-align: center;
+    }
+  
+    .list-items .item {
+      display: flex;
+      align-items: center;
+      list-style: none;
+      height: 3.5rem;
+      cursor: pointer;
+      transition: 0.3s;
+      padding: 1rem;
+      border-radius: 1rem;
+      border-color: #8c1b09;
+      text-align: center;
+      font-size: 1.8rem;
+    }
+  
+    .select-btn.open ~ .list-items {
+      display: block;
+      border-color: #8c1b09;
+      margin-top: 0.5rem;
+    }
+  
+    .select-btn.open ~ .list-items .item {
+      margin-top: 0.5rem;
+    }
+  
+    .container-one label,
+    .container-two label,
+    .container-three label {
+      cursor: pointer;
+      width: 90%;
+      text-align: center;
+      font-size: 1.8rem;
+    }
+  
+    .item .item-text {
+      font-size: 1.8rem;
+    }
+  
+    .pie_chart {
+      width: 100%;
+      margin-top: 2rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .error-message {
+        color: red;
+        font-size: 1.8rem;
+        font-weight: 400;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+
+  }
+

@@ -1,0 +1,27 @@
+p {
+    text-indent: 50px;
+    text-align: justify;
+}
+
+a{
+    color: #0e60ad;
+}
+
+p.p0 {
+    text-indent: 10px;
+}
+
+h1 {
+    text-align: center;
+    text-decoration: underline;
+}
+
+.responsive {
+    max-width: 100%;
+    height: auto;
+}
+
+body{
+    margin: 1rem;
+    line-height: 1.4;
+}

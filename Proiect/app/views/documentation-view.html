@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1"> 
+        <title>EmoF Project Documentation</title>
+        <link rel="stylesheet" href="/Proiect/public/resources/css/base.css">
+        <link rel="stylesheet" href="/Proiect/public/resources/css/documentation.css">
+        <script defer src="/Proiect/public/resources/js/documentation.js"></script>
+    </head>
+    <body>
+        <article resource="#" typeof="schema:ScholarlyArticle">
+            <header>
+                <h1 property="schema:name">EmoF Project Documentation</h1>
+            </header>
+            <div role="contentinfo">
+                <section typeof="sa:AuthorsList">
+                    <h2>Authors of the website</h2>
+                    <ul>
+                        <li typeof="sa:ContributorRole" property="schema:author">
+                            <span property="schema:author" typeof="schema:Person">
+                                <meta property="schema:givenName" content="Razvan">
+                                <meta property="schema:familyName" content="Apetrei">
+                                <meta property="schema:additionalName" content="Emanuel">
+                                <span property="schema:name">
+                                    Apetrei Razvan-Emanuel
+                                </span>
+                            </span>
+                            <ul>
+                                <li property="schema:roleContactPoint" typeof="schema:ContactPoint">
+                                    <a href="mailto:apetreirazvane@gmail.com" property="schema:email">apetreirazvane@gmail.com</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li typeof="sa:ContributorRole" property="schema:author">
+                            <span property="schema:author" typeof="schema:Person">
+                                <meta property="schema:givenName" content="Daniel">
+                                <meta property="schema:familyName" content="Dumitru">
+                                <meta property="schema:additionalName" content="Antoniu">
+                                <span property="schema:name">
+                                    Dumitru Daniel-Antoniu
+                                </span>
+                            </span>
+                            <ul>
+                                <li property="schema:roleContactPoint" typeof="schema:ContactPoint">
+                                    <a href="mailto:ddumitru128@gmail.com" property="schema:email">ddumitru128@gmail.com</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li typeof="sa:ContributorRole" property="schema:author">
+                            <span property="schema:author" typeof="schema:Person">
+                                <meta property="schema:givenName" content="Alexandru">
+                                <meta property="schema:familyName" content="Nechifor">
+                                <span property="schema:name">
+                                    Nechifor Alexandru
+                                </span>
+                            </span>
+                            <ul>
+                                <li property="schema:roleContactPoint" typeof="schema:ContactPoint">
+                                    <a href="mailto:alexandruneky@gmail.com" property="schema:email">alexandruneky@gmail.com</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </section>
+                <section typeof="sa:Affiliations">
+                    <h2>Affiliations</h2>
+                    <ul>
+                        <li id="sa">
+                            <span typeof="schema:Organization" resource="https://www.info.uaic.ro/">
+                                <span property="schema:name">Faculty of Computer Science</span>,
+                                <span property="schema:parentOrganization">
+                                    <span typeof="schema:Organization">
+                                        <span property="schema:name">Alexandru Ioan Cuza University</span>
+                                        -
+                                        <span property="schema:location" typeof="schema:Place">
+                                            <span property="schema:address" typeof="schema:PostalAddress">
+                                                <span property="schema:addressLocality">Iasi</span>,
+                                                <span property="schema:addressRegion">Iasi</span>,
+                                                <span property="schema:addressCountry">Romania</span>
+                                            </span>    
+                                        </span>
+                                    </span>
+                                </span>
+                            </span>
+                        </li>
+                    </ul>
+                </section>
+            </div>
+            <section>
+                <h2>List with content of the documentation</h2>
+                <ul>
+                    <li>
+                        <a href="#introduction">1.Introduction</a>
+                        <ul>
+                            <li><a href="#purpose">1.1.Purpose</a></li>
+                            <li><a href="#product_scope">1.2.Product Scope</a></li>
+                            <li><a href="#references">1.3.References</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#overall_description">2.Overall description</a>
+                        <ul>
+                            <li><a href="#product_perspective">2.1.Product Perspective</a></li>
+                            <li><a href="#product_functions">2.2.Product Functions</a></li>
+                            <li><a href="#user_classes_and_characteristics">2.3.User Classes and Characteristics</a></li>
+                            <li><a href="#operating_environment">2.4.Operating Environment</a></li>
+                            <li><a href="#design_and_implementation_constraints">2.5.Design and Implementation Constraints</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#external_interface_requirements">3.External Interface Requirements</a>
+                        <ul>
+                            <li><a href="#user_interfaces">3.1.User Interfaces</a></li>
+                            <li><a href="#hardware_interfaces">3.2.Hardware Interfaces</a></li>
+                            <li><a href="#software_interfaces">3.3.Software Interfaces</a></li>
+                            <li><a href="#communication_interfaces">3.4.Communication Interfaces</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#system_features">4.System Features</a>
+                        <ul>
+                            <li><a href="#account_creation">4.1.Account Creation</a></li>
+                            <li><ul>
+                                <li><a href="#description_and_priority_1">4.1.1.Description and Priority</a></li>
+                                <li><a href="#stimulus_response_sequences_1">4.1.2.Stimulus/Response Sequences</a></li>
+                                <li><a href="#functional_requirements_1">4.1.3.Functional Requirements</a></li>
+                            </ul></li>
+                            <li><a href="#sending_feedback">4.2.Sending Feedback</a></li>
+                            <li><ul>
+                                <li><a href="#description_and_priority_2">4.2.1.Description and Priority</a></li>
+                                <li><a href="#stimulus_response_sequences_2">4.2.2.Stimulus/Response Sequences</a></li>
+                                <li><a href="#functional_requirements_2">4.2.3.Functional Requirements</a></li>
+                            </ul></li>
+                            <li><a href="#upload_a_form">4.3.Upload a Form</a></li>
+                            <li><ul>
+                                <li><a href="#description_and_priority_3">4.3.1.Description and Priority</a></li>
+                                <li><a href="#stimulus_response_sequences_3">4.3.2.Stimulus/Response Sequences</a></li>
+                                <li><a href="#functional_requirements_3">4.3.3.Functional Requirements</a></li>
+                            </ul></li>
+                            <li><a href="#visualise_statistics">4.4.Visualise Statistics</a></li>
+                            <li><ul>
+                                <li><a href="#description_and_priority_4">4.4.1.Description and Priority</a></li>
+                                <li><a href="#stimulus_response_sequences_4">4.4.2.Stimulus/Response Sequences</a></li>
+                                <li><a href="#functional_requirements_4">4.4.3.Functional Requirements</a></li>
+                            </ul></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#other_nonfunctional_requirements">5.Other Nonfunctional Requirements</a>
+                        <ul>
+                            <li><a href="#performance_requirements">5.1.Performance Requirements</a></li>
+                            <li><a href="#security_requirements">5.2.Security Requirements</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </section>
+            <section>
+                <h2 id="introduction">1.Introduction</h2>
+                <section>
+                    <h3 id="purpose">1.1.Purpose</h3>
+                    <p>
+                        EmoF is a site that helps people to get constructive feedback on a product/service that they want to improve.
+                        The constructive feedback consists of emotions from the Plutchik model that the users feel when they see the product/service.
+                        The website will be able to provide statistics on each form after it has ended.
+                    </p>
+                </section>
+                <section>
+                    <h3 id="product_scope">1.2.Product Scope</h3>
+                    <p>The site's purpose is to help people get constructive feedback on a product/service that they want
+                       to improve. There are many people in the world that want to implement or create something inovative,
+                       but don't know exactly all of the needs of the humans. Constructive feedback is the best way to learn
+                       this. Our software comes in help with an unique feature: the possibility to choose an emotion that
+                       an user felt when seeing the product and its characteristics. The user will also have the possibility
+                       to explain why he felt that way. Based on these emotions, when the form ends, you can see the statistics 
+                       of interest, so the owner can see which is the general opinion(and what can improve) and an user can 
+                       see if it's recommended at that moment of time or not.
+                    </p>
+                    <p>
+                        The website will also have an API that can be used by other applications to communicate and get data from
+                        the application. The data can also be able to be exported in a HTML, CSV and JSON file.
+                    </p>
+                </section>
+                <section>
+                    <h3 id="references">1.3.References</h3>
+                    <p class="p0">Documents that helped us in creating the website:</p>
+                    <ul>
+                        <li><a href="https://developer.mozilla.org/en-US/">MDN</a>(documentation for HTML and CSS)</li>
+                        <li><a href="https://www.guru99.com/php-tutorials.html">GURU99</a>(learning PHP)</li>
+                        <li><a href="https://flukeout.github.io/">CSS Diner</a>(a funny way to consolidate knowledge about CSS)</li>
+                        <li><a href="https://profs.info.uaic.ro/~busaco/teach/courses/web/web-film.html">Web tehnologies</a>(theoretical part)</li>
+                    </ul>
+                    <p class="p0">Tools which we used in designing the frontend part:</p>
+                    <ul>
+                        <li><a href="https://cssgradient.io/">CSSGradient</a>(for the background of the page)</li>
+                    </ul>
+                </section>
+            </section>
+            <section>
+                <h2 id="overall_description">2.Overall Description</h2>
+                <section>
+                    <h3 id="product_perspective">2.1.Product Perspective</h3>
+                    <p>
+                        EmoF is a new, self-contained product with a few things in common with Google Forms, based on emotion feedback.
+                    </p>
+                </section>
+                <section>
+                    <h3 id="product_functions">2.2.Product Functions</h3>
+                    <p class="p0">Functionalities of the site:</p>
+                    <ul>
+                        <li>Being able to create and log into an account on the platform;</li>
+                        <li>Sending anonimous feedback for a product/service or concept;</li>
+                        <li>Creating and uploading a form with the product/service you want to receive feedback (only if you have an account);</li>
+                        <li>Filter the forms by some common tags or by name</li>
+                        <li>Sort forms based on expiration date and popularity</li>
+                        <li>Having in your profile a list with forms that you uploaded;</li>
+                        <li>Visualising statistics with the feedback received on the forms with the emotions received;</li>
+                        <li>The site with an API REST/GraphQL will manage the forms and all the responses;</li>
+                        <li>Being able to export the data in a HTML, CSV and JSON files;</li>
+                        <li>Having the possibility to manage forms inside the web application as an administrator;</li>
+                    </ul>
+                </section>
+                <section>
+                    <h3 id="user_classes_and_characteristics">2.3.User Classes and Characteristics</h3>
+                    <p class="p0">There are 3 possible types of users which can use the website:</p>
+                    <ol>
+                        <li>
+                        Users that create and upload a form for feedback
+                        <ul>
+                            <li>they have something/someone that can(and want) to make better;</li>
+                            <li>they want to hear the opinion of people in order to see what it's good and what not in the object from the form;</li>
+                            <li>they want to see what is the most predominant emotion that is triggered by the object;</li>
+                            <li>they also want to ask pertinent questions in order to see what can be improved;</li>
+                            <li>the object can be from a variety of categories(some examples are listed below): </li>
+                            <li><ul>
+                                <li>a person</li>
+                                <li><ul>
+                                    <li>it can be the user that uploads the form</li>
+                                    <li>usefull to see how good he is at his/her profession(for example: public speaker, singer, doctor)</li>
+                                </ul></li>
+                                <li>a geographical place</li>
+                                <li><ul>
+                                    <li>see if the place needs renovation(example: a castle)</li>
+                                    <li>see how safe it is to walk there(especially for places in the nature, like caves or mountain trails)</li>
+                                </ul></li>
+                                <li>a product</li>
+                                <li><ul>
+                                    <li>see if the product fulfills the requirements for which it was created</li>
+                                    <li>see if it raises to the expectations of the public</li>
+                                    <li>see what updates(if are any) can be added</li>
+                                </ul></li>
+                                <li>a hospital</li>
+                                <li><ul>
+                                    <li>see if the sanitory conditions are met</li>
+                                    <li>see if the doctors do the job right</li>
+                                </ul></li>
+                            </ul></li>
+                        </ul></li>
+                        <li>Users that give feedback
+                        <ul>
+                            <li>they want to say their opinion about an object from the site;</li>
+                            <li>they give constructive feedback in order to help;</li>
+                            <li>they can select a certain category of forms from where to complete one or more;</li>
+                            <li>in the form they also select an emotion;</li>
+                        </ul></li>
+                        <li>Users that see the statistics
+                        <ul>
+                            <li>they want to see the opinion of people in order to know what it's recommended and what it's not;</li>
+                            <li>they can discover different elements from a certain category;</li>
+                            <li>they can view the statistics in HTML, CSV or JSON formats;</li>
+                        </ul></li>
+                    </ol>
+                    <p>Note: an user can be part of more categories(for example, he can create forms and give feedback to other forms).</p>
+                </section>
+                <section>
+                    <h3 id="operating_environment">2.4.Operating Environment</h3>
+                    <p>The programming languages used for the front-end are HTML, CSS and JavaScript to communicate with the back-end and help design pages, 
+                        structure them and make them responsive, such that they can be accessed from any device. PHP will be used for the back-end part, 
+                        together with MySQLi extension.</p>
+                </section>
+                <section>
+                    <h3 id="design_and_implementation_constraints">2.5.Design and Implementation Constraints</h3>
+                    <p>In order to open the CSV format of the statistics, you need to have access to Google Sheets or a text editor(or it can be opened with Excel). For the JSON 
+                        format you need to have an open-source text editor on your device(for example, File Viewer for Android). Both of these formats can also be opened from the
+                        browser(with an online viewer).</p>
+                </section>
+            </section>
+            <section>
+                <h2 id="external_interface_requirements">3.External Interface Requirements</h2>
+                <section>
+                    <h3 id="user_interfaces">3.1.User Interfaces</h3>
+                    <p>All pages from this website have in common the same header that contains the title of the website and links to other pages from the site.</p>
+                    <p>When you first enter the site, you are redirected to the start page. It contains the title of the application, a short 
+                        description and the flower with Plutchik model. There is also a "Start now" button used to continue without making an account.</p>
+                    <p>In "Register" page, you have the possibility to create an account(if you already have one, just click on "Already have an
+                        account?" phrase). There are 6 fields that you need to complete: "Username", "Password", "Email", "Date of birth", "Gender"
+                        and "Country". After you complete all of the fields, you can press the "Register" button. Each field requires a specific
+                        data(only some characters can be written, the data needs to respect a format), so if at least one of them doesn't have
+                        the required information(or it is empty), you won't be registered, and the fields which are not correctly completed will have
+                        red margins. You will also see in these fields an error message, depending on what you didn't respect.</p>
+                    <p>"Login" page is used to connect to the site with your account, so that you can have access to your data. The user name
+                        and password are required in order to login, so make sure that you don't forget your password(or write it somewhere safe).</p>
+                    <p>In the "Home" page, you have at the left of the page a field with your photo  
+                        and your name (if you don't have an account these are empty). Below, there are checkboxes with different types used to filter
+                        forms based on different categories. The rest of the page has a search bar to write the name 
+                        of the thing you want to see and forms below, with rectangular form, containing inside a photo with the element, name, 
+                        time left for completion and a short description. Pressing on any form will open a new page used to give feedback for that form.</p> 
+                    <p>The page used to give feedback contains at the top the title of the object, then some images with the object and optionally the main description.
+                        Then you have an area where you can select the emotion overall for the object and a short description. Then there will be areas for each component,
+                        that contain the component title and optionally a short description and a box from where you select an emotion for the overall product
+                        and a text area where you can write a short description why you felt that way if you wish to. At the end you can submit using the "Submit" button.</p>
+                    <p>"Create" page has the option to make a form. There are many elements to be completed including the form name, description, main-image for the form,
+                        the expiration date, if the statistics for the form should be public and if the form should still be seen after it expires. Optionally you can add
+                        more images to the form and add components to the form. For each component, you can add a title, description and images. At the end of the page, there is
+                        a submit button that will verify the data and if the data passes the verification then it will redirect to a success page.</p>
+                    <p>In the "About" page, you can find some details and information related to the site and the mission of it. Here is 
+                        also implemented a link which leads to this documentation.</p>
+                    <p>The "Profile" page has stored the information about you in the left part. Besides what you completed at the register part, you 
+                        have the number of forms that you created, the number of forms that you completed and a photo(if you want to upload one). The rest 
+                        of the page contains the forms where you completed at least one answer. You have the name of the form, the date when you started to
+                        write in the form and how much time do you have to complete it until the form closes. There is also a progress bar, which shows how 
+                        much of the form is completed and an equivalent percentage.</p>
+                    <p>From the profile and forms, you will also be able to view statistics about each form. The page starts with the title of the form, the time when it
+                        expired and the description. Then contains the statistics about the feedback given by the users showing different graphs and charts and the reviews given.
+                    </p>
+                    <p>The "Statistics" page displays all forms you can see the statistics of and a search bar for searching for forms. After pressing on a form,
+                    you will be redirected to the "give-statistics" page.</p>
+                    <p>The "Give Statistics" page displays for a form the statistics for the responses. Here you can choose the components you wish to see the statistics of
+                    and the age range of the users and the time elapsed since they gave the feedback. After choosing from these settings, you can press check and it will display
+                    charts with the emotions chosen by the users. Then for each chart, you can choose to view the responses and it will show a table with the users that responded and
+                    the emotions given. This data can be exported in JSON and CSV for each chart.</p>
+                </section>
+                <section>
+                    <h3 id="hardware_interfaces">3.2.Hardware Interfaces</h3>
+                    <p>The website can be accessed from any computer, laptop or mobile device. The communication protocol which is used is HTTP.</p>
+                </section>
+                <section>
+                    <h3 id="software_interfaces">3.3.Software Interfaces</h3>
+                    <p>In order to save information about each profile of the users and forms that they uploaded, we'll use a database. The database has 
+                        multiple tables: one for storage of the accounts, one for the forms from the site and one for the statistics. The username has the 
+                        role of primary key in the accounts table, so there won't be two users with the same username. This field is case sensitive. In the forms
+                        table, each form has a number which is uniquely associated with an username(the user that created the form) and an unique id number used 
+                        to identify the corresponding statistic from the third table. There will also be tables storing information about the forms and the feedback given.</p>
+                </section>
+                <section>
+                    <h3 id="communication_interfaces">3.4.Communication Interfaces</h3>
+                    <p>The HTTP protocol is used for data transfer.</p>
+                </section>
+            </section>
+            <section>
+                <h2 id="system_features">4.System Features</h2>
+                <section>
+                    <h3 id="account_creation">4.1.Account Creation</h3>
+                    <section>
+                        <h4 id="description_and_priority_1">4.1.1.Description and Priority</h4>
+                        <p>You need to create an account in order to upload forms on the website. This feature is available in the "Register" page and has a high 
+                            priority level.
+                        </p>
+                    </section>
+                    <section>
+                        <h4 id="stimulus_response_sequences_1">4.1.2.Stimulus/Response Sequences</h4>
+                        <p>The user goes to the "Register" page, where he needs to complete 6 fields: "Username", "Password", "Email", "Date of birth", "Gender" and
+                            "Country". After all of the fields are completed, the button "Register" will be pressed. If no errors occurs, the user will be sent to the 
+                            "Home" page and the information used will be available in the "Profile" section. If the person that access the website already has an account,
+                            he can press "Already have an account?" section from the "Register" or he can go directly to the "Login". The only things required are "Username"
+                            and "Password". People can access the site and complete forms without having an account, but they won't be able to create and upload forms.</p>
+                    </section>
+                    <section>
+                        <h4 id="functional_requirements_1">4.1.3.Functional Requirements</h4>
+                        <p>Each field has a specific type which needs to be respected. "Username" field can have letters, digits, spaces and '_' character, but the first character
+                            cannot be a digit or space. "Password" field can have any character from the QWERTY(see image below) layout except space and the characters written will 
+                            be printed on the screen as a dot. "Email" field needs to respect the format 'name@platform.com'. "Date of birth" field is of type date and you can select 
+                            a date from the calendar(icon in the right of the field). "Gender" field has a selection menu and you can choose from "Male", "Female" or "Other". "Country" 
+                            field can have any country from the world. If any of these fields are incorrectly completed(or are not completed), the profile won't be 
+                            created, and the fields which don't correspond with the format will have red borders and an error message inside the field. The "Username" is unique, where 
+                            won't be two profiles with the same name, so if the name chosen already exists there will be an error and the user will have to think of another username.
+                            All of these data will be stored in a database with "Username" as a primary key and can be visible for the user in the "Profile" page.
+                         </p>
+                         <img src="../resources/keyboard.png" alt="QWERTY format" class="responsive">
+                    </section>
+                </section>
+                <section>
+                    <h3 id="sending_feedback">4.2.Sending Feedback</h3>
+                    <section>
+                        <h4 id="description_and_priority_2">4.2.1.Description and Priority</h4>
+                        <p>Any person that access the site can select one or more forms to complete, giving feedback to the form owner. This feature is available at the "Home" page
+                            and has a high priority level.</p>
+                    </section>
+                    <section>
+                        <h4 id="stimulus_response_sequences_2">4.2.2.Stimulus/Response Sequences</h4>
+                        <p>The user goes to the "Home" page and selects a form which is not closed(forms which have expired can remain on the site). Here, he has a page with the title, images and a short description.
+                            After that, there is a selection menu, from which the user choose an emotion for the overall object. Then, each component(defined by the owner) has a selection menu with emotions and a field 
+                            for writing what part of the object made you feel like the emotion you selected. After you complete all of the components, you can press the "Submit" button. Then you are redirected to the 
+                            "Home" page. In the left, there are multiple boxes, each one representing a category of object from forms. The user can click on one or more boxes, 
+                            so that he will have only forms which corresponds with these categories. There is also a search bar, so that the user can search a specific object, 
+                            no matter the category.</p>
+                    </section>
+                    <section>
+                        <h4 id="functional_requirements_2">4.2.3.Functional Requirements</h4>
+                        <p>Each form is open for a limited time, after that it can still be on the site, if the person making the form chose to do so, but it would be closed. 
+                            If a person doesn't complete the entire form until it closes, his feedback won't be taken in consideration. The form has a number of components. You need to select an emotion for the overall object and optionally an emotion for each component of the object.
+                            If you don't complete any of the mandatory fields, when you press "Submit", the website will tell you what is wrong and you won't be able to submit. For the text part,
+                            each answer is optionally if the person giving feedback wants to give more information about why he felt that way.</p>
+                    </section>
+                </section>
+                <section>
+                    <h3 id="upload_a_form">4.3.Upload a Form</h3>
+                    <section>
+                        <h4 id="description_and_priority_3">4.3.1.Description and Priority</h4>
+                        <p>If you have an account, you can create a form where you can add images and components. This can be done at the "Create" page and has a high priority level.</p>
+                    </section>
+                    <section>
+                        <h4 id="stimulus_response_sequences_3">4.3.2.Stimulus/Response Sequences</h4>
+                        <p>In the create page, you have a field for the form name, a field for description, fields for components of the object(2 by default, if you want to add more press
+                            enter when you are in the last field), a field where you set an expiration date, the question "Should the form still be available for the public after the expiration
+                            date?", where you need to select "Yes" or "No", and a field for uploading images. Except components and images, all of these are mandatory to be completed. After that, you can
+                            press "Create new form" button.</p>
+                    </section>
+                    <section>
+                        <h4 id="functional_requirements_3">4.3.3.Functional Requirements</h4>
+                        <p>You cannot create the form if a field(except components and images) is not completed. The form name needs to have at least 5 characters, the description needs to have at least 20 characters,
+                            expiration date needs to be set in the future and for the question about what happens to the form when it expires you need to select "Yes" or "No". If at least one of
+                            these is not completed when you press "Create new form", the website will tell you what is wrong and you will have to fix the errors for it to work. </p>
+                    </section>
+                </section>
+                <section>
+                    <h3 id="visualise_statistics">4.4.Visualise Statistics</h3>
+                    <section>
+                        <h4 id="description_and_priority_4">4.4.1.Description and Priority</h4>
+                        <p>Any user can see the statistics based on emotions for the objects whose forms expired. This can be done at the view feedback page accessed from the forms or profile
+                            and has a high priority level.</p>
+                    </section>
+                    <section>
+                        <h4 id="stimulus_response_sequences_4">4.4.2.Stimulus/Response Sequences</h4>
+                        <p>The user goes to the view feedback page, where he has available four rectangles: one with data about the form(name, time when ended, description and number of 
+                            feedbacks), one with responses to each question, one with a pie chart representing how much percentage was for each emotion(the emotions are written in
+                            the right of the chart) and one with a rectangle for each emotion. The rectangles have the length directly proportional with the number of votes for that 
+                            emotion. These statistics can also be available in CSV and JSON format.</p>
+                    </section>
+                    <section>
+                        <h4 id="functional_requirements_4">4.4.3.Functional Requirements</h4>
+                        <p>By default, the visualisation will be on HTML format. If you select CSV or JSON format, a file will automatically download to your device.</p>
+                    </section>
+                </section>
+            </section>
+            <section>
+                <h2 id="other_nonfunctional_requirements">5.Other Nonfunctional Requirements</h2>
+                <section>
+                    <h3 id="performance_requirements">5.1.Performance Requirements</h3>
+                    <p>There are no performance requirements for using the application(only to have internet connection and a browser).</p>
+                </section>
+                <section>
+                    <h3 id="security_requirements">5.2.Security Requirements</h3>
+                    <p>For the security part, the server can be behind a firewall. For login, we can make sure that no SQL injection can be done. A DDoS mitigation service can also be implemented.</p>
+                </section>
+            </section>
+        </article>
+    </body>
+</html>
